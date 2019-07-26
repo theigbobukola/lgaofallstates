@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+            }
+            body{
+                background:#04a1df;
+                color:white;
+            }
+            div{
+                margin: 10px 0;
+            }
+            button, select, input{
+                padding: 10px 5px;
+                background: white;
+                border:0;
+                border-radius: 15px;
+            }
+            select{
+                width: 150px;
+            }
+            button{
+                width:50px;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            table{
+                width:70%;
+            }
+        </style>
+        <title>Adding list to a table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center> 
+        <div> <h1>ADD LIST TO TABLE</h1></div> <br>
+        <div> <input type="text" id="fn" placeholder="First Name"></div><br>
+        <div> <input type="text" id="ln" placeholder="Last Name"></div><br>
+        <div>  Gender
+            <input type="radio"  name="gen" value="male" id="m"> Male
+            <input type="radio"  name="gen" value="female" id="f"> Female
+        </div>
+        <div><select id="state">
+                <option value="0">Choose State</option>
+            </select>
+            <div>
+             <select id="lga">
+             <option value="0"> Choose lga</option>
+             </select>
+            </div>
+        </div> 
+        <br>
+        
+        <div> Select Qualification <br>
+            <input type="checkbox" value="HND"> HND
+            <input type="checkbox" value="BSc"> BSc       
+            <input type="checkbox" value="OND"> OND       
+        </div><br>
+        <div> <button id="add">Add</button></div> <br>
+        <table>
+            <tr>
+                <td> S/N</td>
+                <td> First Name</td>
+                <td> Last name</td>
+                <td> State</td>
+                <td> Gender</td>
+                <td> Qualification</td>
+                <td>LGA</td>
+
+            </tr>
+        </table>
+        </center>
+        <script src="list_using_JS.js" type="text/javascript"></script>
+
+    </body>
+</html>
